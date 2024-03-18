@@ -28,7 +28,7 @@ Essas atividades são de execução individual com intuito avaliativo. Todas as 
 
 9)      Faça um algoritmo que leia uma matriz 5 x 5. Leia também um valor de X. O programa deverá fazer uma busca desse valor na matriz e, ao final, escrever a localização (linha e coluna) ou uma mensagem de “não encontrado”.
 
-10)   Faça um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule a matriz C = A ∗ B.
+10)     Faça um programa que leia duas matrizes A e B de tamanho 3 x 3 e calcule a matriz C = A ∗ B.
 
 O projeto deve ser enviado compactado na atividade. 
 
