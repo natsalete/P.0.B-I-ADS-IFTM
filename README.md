@@ -55,41 +55,43 @@ Você deve fazer um programa que realize o cadastro de uma conta, dando opção 
 informado o valor de depósito inicial. Em seguida, realizar um depósito e depois um saque, sempre mostrando
 os dados da conta após cada operação.
 
-Exemplo 1
-Número da conta: 8532
-Titular da conta: Alex Green
-Há um depósito inicial (s/n)? s
-Digite o valor do depósito inicial: 500,00
+- Exemplo 1
 
-Dados da conta:
-Conta 8532, Titular: Alex Green, Saldo: $ 500,00
+Número da conta: 8532 <br />
+Titular da conta: Alex Green <br />
+Há um depósito inicial (s/n)? s <br />
+Digite o valor do depósito inicial: 500,00 <br />
+
+Dados da conta: <br />
+Conta 8532, Titular: Alex Green, Saldo: $ 500,00 <br />
 
 Digite o valor do depósito: 200,00
 
-Dados atualizados da conta:
-Conta 8532, Titular: Alex Green, Saldo: $ 700,00
+Dados atualizados da conta: <br />
+Conta 8532, Titular: Alex Green, Saldo: $ 700,00 <br />
 
 Digite o valor do saque: 300,00
 
-Dados atualizados da conta:
+Dados atualizados da conta: <br />
 Conta 8532, Titular: Alex Green, Saldo: $ 395,00
 
-Exemplo 2
-Digite o número da conta: 7801
-Digite o titular da conta: Maria Brown
-Há um depósito inicial (s/n)? n
+- Exemplo 2
 
-Dados da conta:
-Conta 7801, Titular: Maria Brown, Saldo: $ 0,00
+Digite o número da conta: 7801 <br />
+Digite o titular da conta: Maria Brown <br />
+Há um depósito inicial (s/n)? n <br />
+
+Dados da conta: <br />
+Conta 7801, Titular: Maria Brown, Saldo: $ 0,00 <br />
 
 Digite o valor do depósito: 200,00
 
-Dados atualizados da conta:
-Conta 7801, Titular: Maria Brown, Saldo: $ 200,00
+Dados atualizados da conta: <br />
+Conta 7801, Titular: Maria Brown, Saldo: $ 200,00 <br />
 
 Digite o valor do saque: 198,00
 
 Operação não realizada. Saldo Insuficiente
 
-Dados atualizados da conta:
+Dados atualizados da conta: <br />
 Conta 7801, Titular: Maria Brown, Saldo: $ 200,00
