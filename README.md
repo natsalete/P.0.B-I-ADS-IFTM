@@ -60,12 +60,17 @@ Número da conta: 8532
 Titular da conta: Alex Green
 Há um depósito inicial (s/n)? s
 Digite o valor do depósito inicial: 500,00
+
 Dados da conta:
 Conta 8532, Titular: Alex Green, Saldo: $ 500,00
+
 Digite o valor do depósito: 200,00
+
 Dados atualizados da conta:
 Conta 8532, Titular: Alex Green, Saldo: $ 700,00
+
 Digite o valor do saque: 300,00
+
 Dados atualizados da conta:
 Conta 8532, Titular: Alex Green, Saldo: $ 395,00
 
@@ -73,12 +78,18 @@ Exemplo 2
 Digite o número da conta: 7801
 Digite o titular da conta: Maria Brown
 Há um depósito inicial (s/n)? n
+
 Dados da conta:
 Conta 7801, Titular: Maria Brown, Saldo: $ 0,00
+
 Digite o valor do depósito: 200,00
+
 Dados atualizados da conta:
 Conta 7801, Titular: Maria Brown, Saldo: $ 200,00
+
 Digite o valor do saque: 198,00
+
 Operação não realizada. Saldo Insuficiente
+
 Dados atualizados da conta:
 Conta 7801, Titular: Maria Brown, Saldo: $ 200,00
