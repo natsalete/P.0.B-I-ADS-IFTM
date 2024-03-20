@@ -10,11 +10,13 @@ public class Bank {
         
         System.out.println(ccount);
         
-        ccount.deposit(scan);
+        System.out.printf("Informe o valor do deposito:");
+        ccount.deposit(scan.nextDouble());
         
         System.out.println(ccount);
         
-        ccount.withdraw(scan);
+        System.out.printf("Digite o valor do saque: ");
+        ccount.withdraw(scan.nextDouble());
         
         System.out.println(ccount);
     }

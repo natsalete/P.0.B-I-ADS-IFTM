@@ -31,22 +31,18 @@ public class Account {
                 "Conta: " + this.numberCcount +
               ", Titular: " + this.name +
               ", Saldo: $ " + this.balance;
-    }
-    
-    public void deposit(Scanner scan){
-        System.out.printf("Digite o valor do deposito:");
-        double depositMoney = scan.nextDouble();
+    }    
+   
+    public void deposit(double depositMoney){
         this.balance += depositMoney;
     }
     
-    public void withdraw(Scanner scan) {
-        System.out.printf("Digite o valor do saque: ");
-        double withdrawMoney = scan.nextDouble();
-
+    public void withdraw(double withdrawMoney){
         if (this.balance - withdrawMoney - 5.00 < 0) {
             System.out.println("Operacao nao realizada. Saldo Insuficiente!");
         } else {  
             this.balance -= withdrawMoney + 5.00;
         }
     }
+    
 }
