@@ -95,3 +95,29 @@ Operação não realizada. Saldo Insuficiente
 
 Dados atualizados da conta: <br />
 Conta 7801, Titular: Maria Brown, Saldo: $ 200,00
+
+## 
+
+### Atividade 3
+
+EXERCÍCIOS 
+1) Crie uma classe em Java chamada Itens para uma loja de suprimentos de informática. A classe deve conter 
+quatro atributos – o número (String), a descrição (String), a quantidade comprada de um item (int) e o preço por 
+item (double). A classe deve ter um construtor e um método get e set para cada variável de instância. Além 
+disso, forneça um método chamado getTotalItens que calcula o valor total do item e depois retorna o valor 
+como um double. Por padrão inicie os atributos com o valor zero. Forneça os métodos aumentarQuantidade e 
+diminuirQuantidade. Lembrando que não é possível que a quantidade comprada de um item seja menor que 1 e 
+que o preço seja negativo. Crie três objetos Item e exiba o valor total de cada item. Faça uso dos métodos 
+aumentarQuantidade e diminuirQuantidade. Mostre novamente o valor de cada item ao final dessa operação.
+
+2) Crie uma classe em Java chamada Empregado. Essa classe possui três partes de informações como variáveis de 
+instância – atributos – nome (String), sobrenome (String) e um salário mensal (double). A classe deve métodos 
+get e set para cada variável de instância. Escreva um aplicativo chamado PooEmpregado e crie dois objetos 
+Empregado e exibe o salário anual de cada objeto. Então dê a cada Empregado um aumento de 10% e exiba 
+novamente o salário anual de cada Empregado.
+
+4) Crie uma classe em Java chamada Data que inclui três informações como variáveis de instância – atributos – mês 
+(int), dia (int) e ano (int). A classe deve ter métodos get e set para cada variável e um construtor que inicializa as 
+variáveis e assume que os valores fornecidos são corretos. Forneça um método displayData que exibe o dia, o 
+mês e o ano separados por barras normais ( / ). Escreva um aplicativo de teste chamado DataTeste que 
+demonstra as capacidades da classe Data.
