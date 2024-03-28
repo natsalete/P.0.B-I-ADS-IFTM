@@ -121,3 +121,5 @@ novamente o salário anual de cada Empregado.
 variáveis e assume que os valores fornecidos são corretos. Forneça um método displayData que exibe o dia, o 
 mês e o ano separados por barras normais ( / ). Escreva um aplicativo de teste chamado DataTeste que 
 demonstra as capacidades da classe Data.
+
+![Captura de tela 2024-03-27 164655](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/df10e67d-6d14-4838-9f96-71f5c5c30a54)
