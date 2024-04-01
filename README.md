@@ -122,4 +122,34 @@ variáveis e assume que os valores fornecidos são corretos. Forneça um método
 mês e o ano separados por barras normais ( / ). Escreva um aplicativo de teste chamado DataTeste que 
 demonstra as capacidades da classe Data.
 
+##
+
+### Atividade 4
+
+EXERCÍCIOS 
+1) A empresa XYZ trabalha com revenda de peças automotivas para carros nacionais e importados. Cada peça é 
+produzida para um veículo de uma marca e um modelo, considerando que esse mesmo modelo é lançado pela 
+montadora por um período de anos. Quando o veículo é nacional, a empresa XYZ busca por peças por todo país 
+e quando as encontra em outro estado, tem que pagar um imposto para o estado que está fornecendo a mesma. 
+Quando se trata de uma peça para veículo importado o problema se torna um pouco mais complexo pois essas 
+peças são encontradas geralmente em outro país. Sendo assim a empresa realiza uma busca pela internet e faz a 
+importação das peças solicitadas pelos seus clientes. Além do valor do frete da peça, outro ponto que interfere 
+diretamente no preço do produto é a importação, a peça pode ou não ser taxada pela alfandega Brasileira. O 
+cálculo do preço de venda das peças importadas é feito através do sistema, a empresa tem lucro somente em 
+cima do valor de compra da peça, o restante dos custos de importação é repassado na integra para o cliente 
+(frete + valor da importação). Considere que todo produto acima de 50 dólares é taxado em 62% sobre seu valor 
+de custo. Utilize a contação do dólar atual para realização do cálculo. Lembre-se o preço de venda e o valor da 
+importação devem ser calculados com base nos dados inseridos para a peça. O preço de venda é o preço de 
+custo + % margem de lucro. Para as peças nacionais compradas em outro estado, adicione ao preço de venda a 
+taxa de imposto de 20% sobre o preço de custo. Para peças importadas, junto ao preço de venda deve ser 
+adicionado o valor do frete + valor importação. Todos os métodos abstratos (em itálico) devem ser 
+implementados pelas subclasses.
+
+![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/9ca8d3a6-d678-431c-8be5-1c9346f582e2)
+
+2) Implemente Construtores, Encapsulamento, Herança e Abstração. 
+Para a instanciação dos objetos utilize somente construtores com parâmetros/assinatura, é vedado o uso de 
+construtores vazios para instanciar objetos. 
+3) Implemente objetos e faça uso de todos os métodos.
+
 ![Captura de tela 2024-03-27 164655](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/df10e67d-6d14-4838-9f96-71f5c5c30a54)
