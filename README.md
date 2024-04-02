@@ -153,3 +153,11 @@ construtores vazios para instanciar objetos.
 3) Implemente objetos e faça uso de todos os métodos.
 
 ![Captura de tela 2024-03-27 164655](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/df10e67d-6d14-4838-9f96-71f5c5c30a54)
+
+##
+
+### TRABALHO 1
+
+![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/d4a4e59e-af07-4adb-b438-add516a4c6dc) ![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/bdd1e32f-31c1-4639-9ede-dfe6988bb401)
+
+
