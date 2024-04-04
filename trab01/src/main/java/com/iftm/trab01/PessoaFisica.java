@@ -1,6 +1,8 @@
 package com.iftm.trab01;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class PessoaFisica extends Pessoa {
 
@@ -13,13 +15,18 @@ public class PessoaFisica extends Pessoa {
     private String nacionalidade;
     private String naturalidade;
     private double salario;
+    private int dia;
+    private int mes;
+    private int ano;
 
-    public PessoaFisica(String nome, String endereco, String telefone, int codigo, String nomePai, String nomeMae, char sexo, Date dataDeNascimento, String cpf, String rg, String nacionalidade, String naturalidade, double salario) {
+    public PessoaFisica(String nome, String endereco, String telefone, int codigo, String nomePai, String nomeMae, char sexo, int dia, int mes, int ano, String cpf, String rg, String nacionalidade, String naturalidade, double salario) {
         super(nome, endereco, telefone, codigo);
         this.nomePai = nomePai;
         this.nomeMae = nomeMae;
         this.sexo = sexo;
-        this.dataDeNascimento = dataDeNascimento;
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
         this.cpf = cpf;
         this.rg = rg;
         this.nacionalidade = nacionalidade;
@@ -52,7 +59,7 @@ public class PessoaFisica extends Pessoa {
     }
 
     public Date getDataDeNascimento() {
-        return this.dataDeNascimento;
+        return this.dataDeNascimento = new Date(this.ano-1900, this.mes-1, this.dia) ;
     }
 
     public void setDataDeNascimento(Date dataDeNascimento) {
@@ -99,14 +106,15 @@ public class PessoaFisica extends Pessoa {
         this.salario = salario;
     }
 
-     
     public void imprimirDados() {
         System.out.println("**Dados da Pessoa Fisica:**");
         super.imprimir();
         System.out.println("Nome do Pai: " + this.nomePai);
         System.out.println("Nome da Mae: " + this.nomeMae);
         System.out.println("Sexo: " + this.sexo);
-        System.out.println("Data de Nascimento: " + this.dataDeNascimento);
+        SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
+        String dataFormatada = formatador.format(getDataDeNascimento() );
+        System.out.println("Data de Nascimento: " + dataFormatada);
         System.out.println("CPF: " + this.cpf);
         System.out.println("RG: " + this.rg);
         System.out.println("Nacionalidade: " + this.nacionalidade);
@@ -127,40 +135,37 @@ public class PessoaFisica extends Pessoa {
         this.salario += valor;
     }
 
-    private double calcularSalarioAnual() { 
+    private double calcularSalarioAnual() {
         return this.salario * 12;
     }
 
-    public void temQuePagarIR(double salarioAnual) {
-        double salarioMensal = salarioAnual / 12;
-
-        if (salarioMensal < 1903.99) {
+    public void temQuePagarIR() {
+        if (this.salario < 1903.99) {
             System.out.println("Não tem que pagar o Imposto de Renda!");
         } else {
-            System.out.println("Valor do IR: R$" + this.calculaIR(salarioAnual));
+            System.out.println("Valor do IR: R$" + this.calculaIR());
         }
     }
 
-    private double calculaIR(double salarioAnual) {
-        double salarioMensal = salarioAnual / 12;
-        if (salarioMensal > 1903.99 && salarioMensal < 2826.65) {
-            return salarioMensal * 0.075;
-        } else if (salarioMensal >= 2826.65 && salarioMensal < 3751.05) {
-            return salarioMensal * 0.15;
-        } else if (salarioMensal >= 3751.05 && salarioMensal < 4664.68) {
-            return salarioMensal * 0.225;
-        } else if (salarioMensal >= 4664.68) {
-            return salarioMensal * 0.275;
+    private double calculaIR() {
+        if (this.salario > 1903.99 && this.salario < 2826.65) {
+            return this.salario * 0.075;
+        } else if (this.salario >= 2826.65 && this.salario < 3751.05) {
+            return this.salario * 0.15;
+        } else if (this.salario >= 3751.05 && this.salario < 4664.68) {
+            return this.salario * 0.225;
+        } else if (this.salario >= 4664.68) {
+            return this.salario * 0.275;
         } else {
             return 0.00;
         }
     }
 
-    public void imprimePrestacaoIR(int parcelas, double valorImposto) {
+    public void imprimePrestacaoIR(int parcelas) {
         if (parcelas < 2 || parcelas > 8) {
             System.out.println("Numero de parcelas invalido!\nNumero maximo de parcelas e 8 e o minimo e 2.");
         } else {
-            System.out.println("Valor de cada parcela: R$" + valorImposto / parcelas);
+            System.out.println("Valor de cada parcela: R$" + this.calculaIR() / parcelas);
         }
     }
 

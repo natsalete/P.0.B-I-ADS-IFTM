@@ -7,11 +7,10 @@ public class PessoaJuridica extends Pessoa {
     private int faixa;
     private int numeroFuncionarios;
     
-    public PessoaJuridica(String nome, String endereco, String telefone, int codigo, String cnpj, String inscricaoEstadual, double faturaMensal, int faixa, int numeroFuncionarios){
+    public PessoaJuridica(String nome, String endereco, String telefone, int codigo, String cnpj, String inscricaoEstadual, double faturaMensal, int numeroFuncionarios){
         super(nome, endereco, telefone, codigo);
         this.cnpj = cnpj ;
         this.inscricaoEstadual = inscricaoEstadual;
-        this.faixa = definirFaixa(faturaMensal*12);
         this.numeroFuncionarios = numeroFuncionarios;
         this.faturaMensal = faturaMensal;
     }
@@ -42,7 +41,7 @@ public class PessoaJuridica extends Pessoa {
     }
     
     public int getFaixa(){
-        return this.faixa;
+        return this.faixa = this.definirFaixa(this.calcularFaturamentoAnual());
     }
     
     public void setFaixa(int faixa){
@@ -57,23 +56,14 @@ public class PessoaJuridica extends Pessoa {
         this.numeroFuncionarios = numeroFuncionarios;
     }
     
-    
-    @Override
-    public String toString(){
-      return super.toString()
-        + "\nCNPJ: " + this.cnpj
-        + "\nInscricao Estadual: " + this.inscricaoEstadual 
-        + "\nFaixa: " + this.faixa
-        + "\nNumero de Funcionarios: " + this.numeroFuncionarios
-        + "\nFatura Mensal: R$" + this.faturaMensal;
-    }
+   
     
     public void imprimirDados() {
         System.out.println("**Dados da Pessoa Juridica:**");
         super.imprimir();
         System.out.println("CNPJ: " + this.cnpj);
         System.out.println("Inscricaoo Estadual: " + this.inscricaoEstadual);
-        System.out.println("Faixa: " + this.faixa);
+        System.out.println("Faixa: " + this.getFaixa());
         System.out.println("Numero de Funcionarios: " + this.numeroFuncionarios);
         System.out.println("Fatura Mensal: R$" + this.faturaMensal);
     }
