@@ -7,12 +7,11 @@ public class PecaImportada extends Produto {
     private double valorDolar;
     private double valorImportacao;
 
-    public PecaImportada(int codigo, String nome, double precoCusto, int margemLucro, double precoVenda, String marcaVeiculo, String modeloVeiculo, int anoInicial, int anoFinal, String revendedor, double valorFrete, double valorDolar, double valorImportacao) {
+    public PecaImportada(int codigo, String nome, double precoCusto, int margemLucro, double precoVenda, String marcaVeiculo, String modeloVeiculo, int anoInicial, int anoFinal, String revendedor, double valorFrete, double valorDolar) {
         super(codigo, nome, precoCusto, margemLucro, precoVenda, marcaVeiculo, modeloVeiculo, anoInicial, anoFinal);
         this.revendedor = revendedor;
         this.valorFrete = valorFrete;
         this.valorDolar = valorDolar;
-        this.valorImportacao = valorImportacao;
     }
 
     public String getRevendedor() {
@@ -53,11 +52,11 @@ public class PecaImportada extends Produto {
                 + "\nRevendedor: " + this.revendedor
                 + "\nValor do Frete: R$ " + this.valorFrete
                 + "\nValor do Dolar: R$ " + this.valorDolar
-                + "\nValor de Importacao: R$ " + this.valorImportacao 
+                + "\nValor de Importacao: R$ " + this.calcularValorImportacao()
                 + super.toString();
     }
 
-    double calcularValorImportacao() {
+    private double calcularValorImportacao() {
         if ((super.getPrecoCusto() / this.valorDolar) > 50.00) {
             this.valorImportacao = (super.getPrecoCusto() * 62) / 100;
         } else {
@@ -70,7 +69,7 @@ public class PecaImportada extends Produto {
     public void imprimirValorImportacao() {
         System.out.println("\nValor de importacao");
         System.out.println("Todo produto acima de 50 dolares e taxado em 62% sobre seu valor.");
-        System.out.println("Valor de importacao: R$" + this.valorImportacao);
+        System.out.println("Valor de importacao: R$" + this.calcularValorImportacao());
     }
 
     @Override
