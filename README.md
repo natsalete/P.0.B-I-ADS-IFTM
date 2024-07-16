@@ -152,7 +152,24 @@ Para a instanciação dos objetos utilize somente construtores com parâmetros/a
 construtores vazios para instanciar objetos. 
 3) Implemente objetos e faça uso de todos os métodos.
 
-![Captura de tela 2024-03-27 164655](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/df10e67d-6d14-4838-9f96-71f5c5c30a54)
+##
+
+### Atividade 5
+
+EXERCÍCIOS
+1) A empresa XYZ trabalha com venda de Cds e Dvds.
+
+![image](https://github.com/user-attachments/assets/047ac064-82d1-45b1-b8cc-997326de0f23)
+
+2) Implemente Construtores (Vazios e com parâmetros/assinatura), Encapsulamento, Herança, Abstração e
+Polimorfismos.
+
+3) Implemente os métodos
+- inserirDados():  Solicita ao usuário os dados necessários para se preencher os campos de um objeto da classe, e atribui os respectivos dados ao objeto.
+- atualizarPreco(): Quando esse método for utilizado o item em questão recebe um -acréscimo de 10% em seu preço.
+- atualizarPreco(porcentagem): Quando esse método for utilizado o item em questão recebe um acréscimo em seu preço no valor da porcentagem informada. Vale salientar que, a porcentagem não pode ser negativa e também não pode ser maior que 40%. Caso o usuário informe um valor incorreto para a porcentagem, o sistema deverá exibir uma mensagem com o respectivo erro.
+
+4) Implemente 3 objetos e faça uso de todos os métodos
 
 ##
 
@@ -160,4 +177,6 @@ construtores vazios para instanciar objetos.
 
 ![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/d4a4e59e-af07-4adb-b438-add516a4c6dc) ![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/bdd1e32f-31c1-4639-9ede-dfe6988bb401)
 
+##
+![Captura de tela 2024-03-27 164655](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/df10e67d-6d14-4838-9f96-71f5c5c30a54)
 
