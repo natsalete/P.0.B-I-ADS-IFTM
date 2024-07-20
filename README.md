@@ -173,6 +173,86 @@ Polimorfismos.
 
 ##
 
+### Atividade 6 - NSR.MinhaEmpresa
+
+Tudo que deve ser feito nessa atividade foi visto em sala. Utilize-a para verificar se você realmente aprendeu o conteúdo proposto. No caso de dúvidas procure o professor ou as anote-as para que possamos sana-las nas próximas aulas.
+## Parte 1 <br>
+1. Elabore um pequeno projeto Java seguindo as seguintes instruções.<br>
+a) Cada projeto deve possuir o seguinte nome, sendo iniciado com as iniciais do seu nome completo em letras maiúsculas exemplo: DHDL, seguido o nome da atividade que é MinhaEmpresa, utilizando um único ponto para separar os 2 blocos, como exemplo: DHDL.MinhaEmpresa. <br>
+b) Crie uma superclasse Pessoa. <br>
+• Código; <br>
+• Nome; <br>
+• Número do CPF; <br>
+• Número total de pessoas estático. <br>
+c) Aplique o conceito de encapsulamento na classe Pessoa. <br>
+d) Crie os seguintes métodos na classe Pessoa para: <br>
+• Imprimir todos os dados;<br>
+• No método construtor implemente um código capaz contar quantas pessoas já foram criadas, armazene esse valor no número total de pessoas. <br>
+• Juntamente no método construtor crie um algoritmo que gere o código da pessoa automaticamente de acordo com o total de pessoas criadas, esse número deve ser sequencial. Sendo assim, o método que insere o código da pessoa se torna desnecessário, portanto, deve ser excluído. <br>
+e) Crie uma subclasse de Pessoa para Funcionário. <br>
+f) Essa subclasse deve conter os seguintes atributos: <br>
+• Número de registro;  <br>
+• Salário; <br>
+• Comissão. <br>
+• Número total de funcionários estático. <br>
+g) Aplique o conceito de encapsulamento na subclasse Funcionário. <br>
+h) Crie os seguintes métodos na subclasse Funcionário para: <br>
+• Imprimir dados do funcionário juntamente com os dados presentes em pessoa, exceto o número total de pessoas; <br>
+• No método construtor implemente um código capaz contar quantos funcionários já foram criadas, armazene esse valor no número total de funcionários. <br>
+• Implemente o método Aumentar Salário, este método deve adicionar 10% ao valor do salário do funcionário. <br>
+• Aplicando o conceito de Polimorfismo, implemente outro método Aumentar Salário que receba um valor inteiro referente a quantidade em porcentagem que o salário será aumentado. O salário não pode aumentar mais que 50% de uma única vez. <br>
+• Implemente um método que possa ser somente utilizado pela classe Funcionário, que imprima o número de registro, o nome do funcionário, o salário e que receba uma mensagem de acordo com a operação efetuada e imprima a mesma. Os métodos Aumentar Salário devem utilizar esse método como resposta de suas transações; <br>
+• Crie um método que imprima o nome do funcionário e o valor que ele deve receber ao final do mês, sabendo que esse valor pode ser obtido através da soma da comissão com o salário. <br>
+i) Crie uma subclasse de Pessoa para Cliente. <br>
+j) Essa subclasse deve conter os seguintes atributos: <br>
+• Filiação; <br>
+• Naturalidade; <br>
+• Número de dependentes. <br>
+• Renda. <br>
+• Número total de clientes estático. <br>
+k) Aplique o conceito de encapsulamento na subclasse Cliente. <br>
+l) Crie os seguintes métodos na subclasse Cliente para: <br>
+• Imprimir dados do Cliente juntamente com os dados presentes em pessoa, exceto o número total de pessoas; <br>
+• No método construtor implemente um código capaz contar quantos clientes já foram criadas, armazene esse valor no número total de clientes. <br>
+• Implemente o método que imprima os dados básicos de um cliente, sendo eles: o código da pessoa, o nome do cliente e sua renda. <br>
+
+## Parte 2
+m) Crie uma classe Serviço. <br>
+n) Essa classe deve conter os seguintes atributos: <br>
+• Cliente; <br>
+• Funcionário; <br>
+• Valor da mão de obra; <br>
+• Valor das peças; <br>
+• Valor estático da Comissão; <br>
+• Valor estático da mão de obra padrão; <br>
+o) Aplique o conceito de encapsulamento na subclasse Serviço. <br>
+p) Crie os seguintes métodos na classe Serviço para: <br>
+• Criei um método que imprima os dados do Cliente, do Funcionário e o total referente ao serviço; <br>
+• Aplicando o conceito de Agregação, um serviço só pode ser criado se existir um cliente e um funcionário para executar o mesmo. <br>
+• Aplicando o conceito de Polimorfismo, e utilizando a mesma regra anterior, crie outros métodos construtores. Um método que receba também o valor das peças, e o outro que receba além do valor das peças o valor da mão de obra. O método que recebe somente o valor das peças deve automaticamente inserir o valor da mão de obra padrão. O método que recebe o valor da mão de obra deve garantir que esse valor não seja inferior a R$ 50,00. Caso isso aconteça, o valor informado deve ser substituído pelo valor padrão. <br>
+• Crie um método de acesso interno que receba os dados do serviço e realize o cálculo da comissão do funcionário. A comissão deve ser calculada somente sobre o valor das peças. Essa comissão deve ser adicionada ao valor da comissão do funcionário que realizou o atendimento/venda. <br>
+q) Na classe executável faça os seguintes itens utilizando os métodos criados: <br>
+• Crie 2 objetos do tipo Funcionário; <br>
+• Insira dados nesses objetos; <br>
+• Crie 2 objetos do tipo Cliente; <br>
+• Insira dados nesses objetos; <br>
+• Imprima os dados dos funcionários; <br>
+• Imprima os dados dos Clientes; <br>
+• Exiba a quantidade de pessoas criadas; <br>
+• Aumente o salário do 1º funcionário; <br>
+• Aumente o salário do 2º funcionário em 30%; <br>
+• Aumente o salário do 1º funcionário em 60%; <br>
+• Imprima os dados básicos dos Clientes criados; <br>
+• Exiba a quantidade de funcionários criados; <br>
+• Exiba a quantidade de Clientes criados; <br>
+• Insira a comissão padrão para serviços no valor de 3%; <br>
+• Insira o valor da mão de obra padrão igual a R$ 40,00; <br>
+• Crie um objeto do tipo Serviço utilizando os objetos criados anteriormente, e informe somente o valor das peças; <br>
+• Crie outro objeto do tipo Serviço utilizando os objetos criados anteriormente, informe o valor das peças e o valor da mão de obra; <br>
+• Crie outro objeto do tipo Serviço utilizando os objetos criados anteriormente, informe o valor das peças e o valor da mão de obra deverá ser igual a R$ 20,00; <br>
+• Imprima o pagamento dos funcionários. <br>
+##
+
 ### TRABALHO 1
 
 ![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/d4a4e59e-af07-4adb-b438-add516a4c6dc) ![image](https://github.com/natsalete/P.O.O-I-ADS-IFTM/assets/135389319/bdd1e32f-31c1-4639-9ede-dfe6988bb401)
